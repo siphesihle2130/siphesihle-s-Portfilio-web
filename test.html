@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF - 8">
+    <meta name="viewport" content="width=device-width, initial - scale=1.0">
+    <title>Filter Component Example</title>
+    <style>
+       .filter-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+ 
+       .content .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+ 
+       .hidden {
+            display: none;
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- Filter options container -->
+    <div class="filter-options">
+        <input type="checkbox" id="filter1" name="filter1" value="option1" onchange="filterContent()">
+        <label for="filter1">Option 1</label>
+        <input type="checkbox" id="filter2" name="filter2" value="option2" onchange="filterContent()">
+        <label for="filter2">Option 2</label>
+    </div>
+    <!-- Content container -->
+    <div class="content">
+        <div class="item option1">Item 1</div>
+        <div class="item option2">Item 2</div>
+        <div class="item option1 option2">Item 3</div>
+    </div>
+    <script>
+        function filterContent() {
+            const checkboxes = document.querySelectorAll('.filter-options input[type="checkbox"]');
+            const items = document.querySelectorAll('.content .item');
+ 
+            items.forEach(item => {
+                item.classList.remove('hidden');
+            });
+ 
+            const selectedFilters = [];
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    selectedFilters.push(checkbox.value);
+                }
+            });
+ 
+            if (selectedFilters.length > 0) {
+                items.forEach(item => {
+                    let shouldHide = true;
+                    selectedFilters.forEach(filter => {
+                        if (item.classList.contains(filter)) {
+                            shouldHide = false;
+                        }
+                    });
+                    if (shouldHide) {
+                        item.classList.add('hidden');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+ 
+</html>

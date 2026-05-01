@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- model screenshttps://www.figma.com/design/wLtw1P6XPbbQX1UO4Trade/Untitled?node-id=0-1&t=jMYBItvoIMrZUXpg-1 -->
+ <!-- capitec: https://www.figma.com/design/P9vA3pMAIwmDJehM1qdMaP/CAPITEC-BANK?node-id=0-1&t=JzhTvevdNrDstQ38-1 -->
+  <!-- find your path https://www.figma.com/design/iC7GnODG5rXiuRI61hJ3MG/FindYourPath?node-id=87-417&t=BOuh6ujS5LDvEs0h-1 -->
+
+  <!-- website -->
+   <!-- montelo: https://siphesihle2130.github.io/Montelo/ -->
+   <!-- onelove -->
+<head>
+  <title>MUF website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .body {
+      background-color: #002060;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "bell mt", serif;
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #a87b00;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+
+    .w3-sidebar .fa {
+      color: #00133a;
+    }
+
+    .w3-sidebar p {
+      color: #000f2c;
+    }
+
+    /* <!--==========================================================animation==========================================================--> */
+
+    /* right */
+  </style>
+</head>
+
+<body class="#002060">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <a href="profile.png"><img src="profile.png" alt="logo" style="width:8.5vw; height:8.5vw"
+        class="w3-jumbo w3-bar-item w3-hover-dark-gray"></a>
+
+    <a href="#home" class="w3-bar-item #ffff w3-button w3-padding-large w3-hover-dark-gray">
+      <i class="fa fa-home w3-jumbo"></i>
+      <p style="font-size:150%">Home</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+      <i class="fa fa-user w3-jumbo"></i>
+      <p style="font-size:150%">About</p>
+    </a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+      <i class="fa fa-th-large w3-jumbo"></i>
+      <p style="font-size:150%">Portfolio</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-gray">
+      <i class="fa fa-envelope w3-jumbo"></i>
+      <p style="font-size:150%">Contact</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-16" id="main">
+    <!-- Header/Home -->
+    <header class="container w3-padding-32 w3-center w3-black" id="home">
+      <section>
+
+
+        <div class="vertical-line"></div>
+        <hr class="horizontal-line">
+        <hr class="horizontal-line2">
+        <div class="vertical-line2"></div>
+        <div class="vertical-line3"></div>
+        <div class="vertical-topline"></div>
+        <h1 class="portfolio">portfolio.</h1>
+        <h3>Hello! I'm Siphesihle</h3>
+        <h4 class="year">2025</h4>
+        <div class="horizontal-line4"></div>
+
+      </section>
+    </header>
+
+    <div class="divider"></div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-center w3-black" id="about">
+      <section class="w3-content w3-justify w3-text-grey w3-padding-64">
+        <h2 class="w3-text-light-grey">about me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p class="b" style="text-decoration: underline #CD9600; text-underline-offset: 8px; height: 100px; font-size: 25px;">Introduction
+        </p>
+        <p class="about-paragraph" style="height:100px">Hi, I’m Khinase Siphesihle, a dedicated and motivated student
+          currently pursuing a Diploma in ICT Application Development at Cape Peninsula University of Technology (CPUT).
+          I have a strong passion for technology, problem-solving, and building digital solutions that improve everyday
+          experiences.
+          My goal is to grow into a skilled software developer who can contribute to innovative and impactful projects.
+        </p>
+
+
+        <p class="b" style="text-decoration: underline #CD9600; text-underline-offset: 8px; height: 100px;font-size: 25px;">Background</p>
+        <p class="about-paragraph" style="height:180px">My journey in the technology field began when I enrolled in a
+          Higher Certificate in ICT, which I completed in 2023.
+          This qualification provided me with a solid foundation in computing and introduced me to key concepts in web
+          development and programming.I am currently furthering my studies through a Diploma in ICT Application
+          Development, where I am expanding my knowledge in software development, databases, and system design. At the
+          moment, I am actively working on
+          two website development projects—one as part of a group assignment and another as an individual project. These
+          projects are helping me
+          strengthen my practical skills, improve teamwork, and gain real-world development experience. I am
+          enthusiastic about learning and
+          continuously exploring the wide range of opportunities within the IT industry.</p>
+
+
+        <p class="b" style="text-decoration: underline #CD9600; text-underline-offset: 8px; height: 100px;font-size: 25px;">Skills and
+          expertise</p>
+        <p class="about-paragraph" style="height:350px">Although I do not yet have formal work experience, my academic
+          projects and personal learning have equipped me with a solid understanding of application development
+          principles. <br><br>
+          <b style="color: #CD9600;">Technical Skills</b> <br>
+          Java (currently learning and applying in projects) <br>
+          HTML, CSS, and JavaScript (foundation in web development) <br>
+          PHP <br>
+          MySQL <br><br>
+
+          <b style="color: #CD9600;">Areas of Interest</b> <br>
+          Web Development <br>
+          Software Engineering <br>
+          Cybersecurity <br>
+          Mobile Application Development <br><br>
+          I am particularly interested in creating user-friendly and efficient applications that solve real-world
+          problems.
+          I enjoy learning how different technologies work together and continuously improving my technical and
+          problem-solving skills.
+        </p>
+
+
+        <p class="b" style="text-decoration: underline #CD9600; text-underline-offset: 8px; height: 100px;font-size: 25px;">personal touch
+        </p>
+        <p class="about-paragraph" style="height:100px">Outside of coding, I enjoy fixing broken electronic appliances.
+          This hands-on interest reflects my curiosity about how things work and strengthens my problem-solving mindset.
+          It also shows my ability to troubleshoot and think practically when faced with technical challenges..
+        </p>
+
+
+        <p class="b" style="text-decoration: underline #CD9600; text-underline-offset: 8px; height: 100px;font-size: 25px;">call to action
+        </p>
+        <p class="about-paragraph">Feel free to explore my portfolio to view my projects and track my progress as a
+          developer.
+          I am always open to learning opportunities, collaboration, and new challenges.
+          If you would like to connect or work together, don’t hesitate to reach out.</p>
+        <a href="Resume.pdf" target="_blank" class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+      </section>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="w3-container w3-padding-32 w3-center w3-black" id="portfolio">
+      <section class="w3-content w3-justify w3-text-grey w3-padding-64 portfolio-wrapper">
+
+        <h2 class="w3-text-light-grey">Portfolio</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section w3-padding-16">
+          <span class="w3-margin-right">Filter:</span>
+          <button class="filter-btn w3-white w3-hover-opacity">ALL</button>
+          <button class="filter-btn w3-white w3-hover-opacity">Logos</button>
+          <button class="filter-btn w3-white w3-hide-small w3-hover-opacity">Websites</button>
+          <button class="filter-btn w3-white w3-hide-small w3-hover-opacity">UX/UI</button>
+        </div>
+        <br><br>
+
+        <div class="grids-wrapper">
+          
+
+          <!-- GRID 1 -->
+          <div id="grid1" class="photo-grid active">
+            <div class="w3-row-padding" id="mainGridContainer">
+              <div class="responsive" data-category="logos">
+                <div class="gallery">
+                  <a href="collectin 2.png"><img src="collectin 2.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>S and H</b></p>
+                    <p style="height: 200px;">This was a logo for a shoe brand. The requirements where to combine letters S and H.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="logos">
+                <div class="gallery">
+                  <a href="collectin 5.png"><img src="collectin 5.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>S and H</b></p>
+                    <p style="height: 200px;">This was a logo for a shoe brand. The requirements where to combine letters S and H.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="logos">
+                <div class="gallery">
+                  <a href="collectin 6.png"><img src="collectin 6.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Olekki</b></p>
+                    <p style="height: 200px;">This was a logo for a small Shop. The main requirement was that the name should clearly visible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRID 2 -->
+          <div id="grid2" class="photo-grid hidden-right">
+            <div class="w3-row-padding" id="grid2Storage">
+              <div class="responsive" data-category="websites" data-project-id="project1">
+                <div class="gallery">
+                  <a href="https://siphesihle2130.github.io/Montelo/"><img src="montelo.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Montelo Solar</b></p>
+                    <p style="height: 350px;">This is a website of an small business called Montelo. It's an still an ongoing project hence the backend is not yet implemented.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="websites" data-project-id="project2">
+                <div class="gallery">
+                  <a href="https://siphesihle2130.github.io/onelove/"><img src="onelove.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>One love</b></p>
+                    <p style="height: 350px;">This was an academic project and the requirement was to design a website for an orphanage.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="logos" data-project-id="project3">
+                <div class="gallery">
+                  <a href="realistic 3.jpg"><img src="realistic 3.jpg" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Blue water connection</b></p>
+                    <p style="height: 200px;">This was a logo for a fishing and it didn't have any specific requirements.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- GRID 3 -->
+          <div id="grid3" class="photo-grid hidden-right">
+            <div class="w3-row-padding">
+              <div class="responsive" data-category="uxui" data-project-id="project4">
+                <div class="gallery">
+                  <a href="https://www.figma.com/design/iC7GnODG5rXiuRI61hJ3MG/FindYourPath?node-id=87-417&t=BOuh6ujS5LDvEs0h-1"><img src="path.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Find Your Path</b></p>
+                    <p style="height: 300px;">This is an academic project where i was required to design a wireframe for the website that will help youth to develop and share experiences.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="logos" data-project-id="project5">
+                <div class="gallery">
+                  <a href="realistic.png"><img src="realistic.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Kiijoo</b></p>
+                    <p style="height: 200px;">This was a logo for a business that transports items from one place to another</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="responsive" data-category="uxui" data-project-id="project6">
+                <div class="gallery">
+                  <a href="https://www.figma.com/design/P9vA3pMAIwmDJehM1qdMaP/CAPITEC-BANK?node-id=0-1&t=JzhTvevdNrDstQ38-1"><img src="capitec.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Second Grid</b></p>
+                    <p style="height: 272px;">This was an acedemic project. The requirements were that we should think of an application that needs some improvements, redesign the application on figma with our improve ments included.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRID 4
+          <div id="grid4" class="photo-grid">
+            <div class="w3-row-padding">
+              <div class="responsive">
+                <div class="gallery">
+                  <a href="#"><img src="realistic.png" class="w3-hover-opacity"></a>
+                  <div class="w3-container">
+                    <p><b>Second Grid</b></p>
+                    <p>Replace these pics later.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+        <!-- PAGE BUTTONS -->
+        <div class="page-bar">
+          <button id="btn1" class="active-btn">1</button>
+          <button id="btn2">2</button>
+          <button id="btn3">3</button>
+          <!-- <button id="btn4">4</button> -->
+        </div>
+      </section>
+    </div>
+
+
+
+    <div class="divider"></div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32 w3-black" id="contact">
+      <div class="w3-padding-64 w3-content w3-text-grey">
+        <div class="vertical-bottomline"></div>
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cape Town, SA</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27 64 848 2130</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+            khinasesiphesihle@gmail.com</p>
+        </div><br>
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="https://formspree.io/f/mqenklqv" method="POST">
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p><br>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p><br>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p><br>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p><br>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity ", style="font-size:38px;color:rgb(25, 106, 255);margin-right: 30px;"> <span style="font-size:20px;color:rgb(255, 255, 255);margin-right: 30px;">  Facebook  </span></i>
+        <i class="fa fa-instagram w3-hover-opacity", style="font-size:38px;color:rgb(255, 25, 186)"><span style="font-size:20px;color:rgb(255, 255, 255);margin-right: 30px;">  Instagram  </span></i>
+        <i class="fa fa-snapchat w3-hover-opacity", style="font-size:38px;color:rgb(255, 194, 25)"><span style="font-size:20px;color:rgb(255, 255, 255);margin-right: 30px;">  Snapchat  </span></i>
+        <i class="fa fa-twitter w3-hover-opacity", style="font-size:38px;color:rgb(0, 54, 153)"><span style="font-size:20px;color:rgb(255, 255, 255);margin-right: 30px;">  Twitter  </span></i>
+        <i class="fa fa-linkedin w3-hover-opacity", style="font-size:38px;color:rgb(25, 106, 255)"><span style="font-size:20px;color:rgb(255, 255, 255);margin-right: 30px;">  Linkedin  </span></i>
+       <!-- End footer  -->
+      </footer>
+
+    </div>
+  </div>
+
+<script>
+  
+    const grids = [null, document.getElementById("grid1"), document.getElementById("grid2"), document.getElementById("grid3")];
+    const btns = [null, document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")];
+    let currentIndex = 1;
+    
+    function navigateTo(targetIndex) {
+        if (targetIndex === currentIndex) return;
+        
+        // Reset all grids and buttons
+        for (let i = 1; i <= 3; i++) {
+            grids[i].classList.remove("active", "hidden-left", "hidden-right");
+            btns[i].classList.remove("active-btn");
+        }
+        
+        // Determine direction
+        const direction = targetIndex > currentIndex ? 'right' : 'left';
+        
+        // Set up the target grid
+        grids[targetIndex].classList.add("active");
+        btns[targetIndex].classList.add("active-btn");
+        
+        // Position other grids based on direction
+        for (let i = 1; i <= 3; i++) {
+            if (i !== targetIndex) {
+                if (direction === 'right') {
+                    if (i < targetIndex) {
+                        grids[i].classList.add("hidden-left");
+                    } else {
+                        grids[i].classList.add("hidden-right");
+                    }
+                } else {
+                    if (i < targetIndex) {
+                        grids[i].classList.add("hidden-left");
+                    } else {
+                        grids[i].classList.add("hidden-right");
+                    }
+                }
+            }
+        }
+        
+        // Special handling for Grid 2 transitions
+        if (targetIndex === 2) {
+            if (currentIndex === 1 && direction === 'right') {
+                grids[2].classList.remove("hidden-right");
+            } else if (currentIndex === 3 && direction === 'left') {
+                grids[2].classList.remove("hidden-left");
+            }
+        }
+        
+        currentIndex = targetIndex;
+    }
+    
+    // Set up click handlers
+    btns[1].onclick = () => navigateTo(1);
+    btns[2].onclick = () => navigateTo(2);
+    btns[3].onclick = () => navigateTo(3);
+    
+    // Initialize
+    navigateTo(1);
+    
+    function clearFormAfterSubmit(event) {
+        setTimeout(() => {
+            document.getElementById('contactForm')?.reset();
+        }, 500);
+    }
+
+    // ============================================== FILTER FUNCTIONALITY WITH REARRANGEMENT =====================================
+    
+    // Get filter buttons
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    // Store original projects for reset
+    let originalProjects = [];
+    
+    // Save original projects on page load
+    function saveOriginalProjects() {
+        const grid1Container = document.querySelector('#grid1 .w3-row-padding');
+        const grid2Container = document.querySelector('#grid2 .w3-row-padding');
+        const grid3Container = document.querySelector('#grid3 .w3-row-padding');
+        
+        originalProjects = [];
+        
+        // Save projects from Grid 1
+        const grid1Projects = grid1Container.querySelectorAll('.responsive');
+        grid1Projects.forEach(project => {
+            originalProjects.push({
+                element: project.cloneNode(true),
+                category: project.getAttribute('data-category')
+            });
+        });
+        
+        // Save projects from Grid 2
+        const grid2Projects = grid2Container.querySelectorAll('.responsive');
+        grid2Projects.forEach(project => {
+            originalProjects.push({
+                element: project.cloneNode(true),
+                category: project.getAttribute('data-category')
+            });
+        });
+        
+        // Save projects from Grid 3
+        const grid3Projects = grid3Container.querySelectorAll('.responsive');
+        grid3Projects.forEach(project => {
+            originalProjects.push({
+                element: project.cloneNode(true),
+                category: project.getAttribute('data-category')
+            });
+        });
+    }
+    
+    // Function to filter and rearrange projects
+    function filterPortfolio(category) {
+        // Get all containers
+        const grid1Container = document.querySelector('#grid1 .w3-row-padding');
+        const grid2Container = document.querySelector('#grid2 .w3-row-padding');
+        const grid3Container = document.querySelector('#grid3 .w3-row-padding');
+        
+        // Filter projects
+        let filteredProjects = [];
+        if (category === 'all') {
+            filteredProjects = originalProjects.map(p => p.element.cloneNode(true));
+        } else {
+            filteredProjects = originalProjects
+                .filter(project => project.category === category)
+                .map(p => p.element.cloneNode(true));
+        }
+        
+        // Clear all containers
+        grid1Container.innerHTML = '';
+        grid2Container.innerHTML = '';
+        grid3Container.innerHTML = '';
+        
+        // Distribute projects: 3 per grid
+        const itemsPerGrid = 3;
+        
+        filteredProjects.forEach((project, index) => {
+            const gridNumber = Math.floor(index / itemsPerGrid) + 1;
+            const projectClone = project.cloneNode(true);
+            
+            // Reset display style
+            projectClone.style.display = '';
+            projectClone.style.visibility = 'visible';
+            projectClone.style.opacity = '1';
+            
+            // Add to appropriate grid
+            if (gridNumber === 1) {
+                grid1Container.appendChild(projectClone);
+            } else if (gridNumber === 2) {
+                grid2Container.appendChild(projectClone);
+            } else if (gridNumber === 3) {
+                grid3Container.appendChild(projectClone);
+            }
+        });
+        
+        // Show/hide grid buttons based on content
+        const hasGrid1Content = grid1Container.children.length > 0;
+        const hasGrid2Content = grid2Container.children.length > 0;
+        const hasGrid3Content = grid3Container.children.length > 0;
+        
+        // Update button visibility
+        if (btns[1]) btns[1].style.display = hasGrid1Content ? 'inline-block' : 'none';
+        if (btns[2]) btns[2].style.display = hasGrid2Content ? 'inline-block' : 'none';
+        if (btns[3]) btns[3].style.display = hasGrid3Content ? 'inline-block' : 'none';
+        
+        // Show message if no projects
+        if (filteredProjects.length === 0) {
+            grid1Container.innerHTML = '<div class="responsive" style="width:100%; text-align:center; padding:50px;">No projects found in this category.</div>';
+            if (btns[1]) btns[1].style.display = 'inline-block';
+            
+            // Reset navigation to grid 1
+            for (let i = 1; i <= 3; i++) {
+                grids[i].classList.remove("active", "hidden-left", "hidden-right");
+                btns[i].classList.remove("active-btn");
+            }
+            grids[1].classList.add("active");
+            btns[1].classList.add("active-btn");
+            currentIndex = 1;
+        } else {
+            // Reset navigation to first available grid
+            let firstVisibleGrid = 1;
+            if (hasGrid1Content) firstVisibleGrid = 1;
+            else if (hasGrid2Content) firstVisibleGrid = 2;
+            else if (hasGrid3Content) firstVisibleGrid = 3;
+            
+            // Reset navigation to first visible grid
+            for (let i = 1; i <= 3; i++) {
+                grids[i].classList.remove("active", "hidden-left", "hidden-right");
+                btns[i].classList.remove("active-btn");
+            }
+            
+            grids[firstVisibleGrid].classList.add("active");
+            btns[firstVisibleGrid].classList.add("active-btn");
+            currentIndex = firstVisibleGrid;
+            
+            // Hide grids before first visible
+            for (let i = 1; i < firstVisibleGrid; i++) {
+                grids[i].classList.add("hidden-left");
+            }
+            // Hide grids after first visible
+            for (let i = firstVisibleGrid + 1; i <= 3; i++) {
+                grids[i].classList.add("hidden-right");
+            }
+        }
+    }
+    
+    // Save original projects on page load
+    saveOriginalProjects();
+    
+    // Add click event to filter buttons
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all filter buttons
+            filterBtns.forEach(button => {
+                button.classList.remove('active-filter');
+                button.style.backgroundColor = '';
+                button.style.color = '';
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active-filter');
+            this.style.backgroundColor = '#a87b00';
+            this.style.color = '#fff';
+            
+            // Get filter value
+            let filterValue = this.textContent.trim().toUpperCase();
+            let category = 'all';
+            
+            if (filterValue === 'LOGOS') {
+                category = 'logos';
+            } else if (filterValue === 'WEBSITES') {
+                category = 'websites';
+            } else if (filterValue === 'UX/UI') {
+                category = 'uxui';
+            }
+            
+            // Apply filter with rearrangement
+            filterPortfolio(category);
+        });
+    });
+    
+    // Initialize - show all projects
+    filterPortfolio('all');
+    
+    // Set ALL button as active by default
+    const allButton = document.querySelector('.filter-btn:first-child');
+    if (allButton) {
+        allButton.classList.add('active-filter');
+        allButton.style.backgroundColor = '#a87b00';
+        allButton.style.color = '#fff';
+    }
+</script>
+
+
+</body>
+
+</html>

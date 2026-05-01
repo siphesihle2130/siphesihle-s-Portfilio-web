@@ -1,0 +1,303 @@
+body {
+background-color:#000f2c;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.description {
+font-size: 20px;
+	font-family: 'montserrat', san-serif;
+	line-height: 1.2; /* Improves readability */
+	color: #ffff;
+	text-align: left;
+	width: 700px;
+	height: 150px;
+	text-align: justify;
+}
+.divider {
+            height: 0.5px;                /* Thin line */
+            background-color: #FFFF;      /* Line color */
+            margin: 20px 0;              /* Space above and below the line */
+            width: 100%;                 /* Full width of the page */
+        }
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body */
+h1 {
+            font-size: 85px;      /* Makes the font size larger */
+            font-weight: 900;     /* Makes the text extra bold */
+			color: #a87b00;
+			position: absolute;
+			left: 45%;
+			top: 220px;
+			font-family: 'bell mt', serif;
+        }
+h2 {
+            font-size: 40px;      /* Makes the font size larger */
+            font-weight: 900;     /* Makes the text extra bold */
+			text-align:left;
+			font-family: 'bell mt', serif;
+        }
+		
+section {
+    padding: 100px;
+    min-height: 100vh;   /* Make each section fill the viewport */
+}
+/*about page*/
+#home {
+	background-color: #000f2c;
+}
+#about {
+    background-color: #000f2c;
+}
+#portfolio {
+	background-color:#000f2c;
+}
+#contact {
+	background-color: #000f2c;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.MUF {
+	font-size: 20px;      /* Makes the font size larger */
+	font-weight: 30%;
+	font-family: 'bell mt', serif;
+
+}
+.divider {
+            height: 1px;                /* Thin line */
+            background-color: #333;      /* Line color */
+            margin: 20px 0;              /* Space above and below the line */
+            width: 100%;                 /* Full width of the page */
+        }
+
+        section {
+            padding: 20px;
+        }
+.footer {
+	text-align: left;
+	position: absolute;
+	top: 2600px;
+	color: #ffff;
+	
+}
+.footer a {
+    margin: 0 2px; /* Adds horizontal space between icons */
+    color: #fff; /* Example color for the icons */
+    font-size: 24px; /* Size of the icons */
+    text-decoration: none; /* Remove underline from links */
+}
+.responsive {
+	width: 300px;       /* set container width */
+    margin-right: 5px; /* space on the right */
+    margin-bottom: 20px; /* space below */
+    display: inline-block; /* ensures spacing works properly */
+}
+
+/*========================================================== ANIMATION ==========================================================*/
+
+/* Keep animations inside the portfolio section */
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide Grids */
+.grids-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 400px; /* Adjust based on your content */
+}
+
+/* Ensure grids stack on top of each other */
+.photo-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease, opacity 0.6s ease, visibility 0s linear 0.6s;
+  visibility: hidden; /* Prevents interaction when hidden */
+}
+
+/* Visible Grid */
+.photo-grid.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+  visibility: visible;
+   transition: transform 0.6s ease, opacity 0.6s ease, visibility 0s linear 0s;
+  z-index: 10;
+}
+
+/* Hide the behind-grid */
+.photo-grid.hidden-left {
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+
+.photo-grid.hidden-right {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+/* Page Buttons */
+.page-bar {
+  position: relative;
+  z-index: 20;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.page-bar button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.page-bar button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.active-btn {
+  background-color: #a87b00 !important;
+  color: #fff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Optional: Add responsive design for mobile */
+@media (max-width: 768px) {
+  .page-bar button {
+    padding: 8px 15px;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+  
+  .grids-wrapper {
+    min-height: 300px;
+  }
+}
+
+/* Optional: Add fade effect for smoother transitions */
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+/* .photo-grid.active {
+  animation: fadeIn 0.6s ease;
+} */
+/*========================================================filters======================================*/
+.filter-btn {
+  border-radius: 20px; 
+   width: 120px;      
+  height: 45px;      
+}
+
+/* Animation for filtered items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* No results message */
+.no-results-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Filter button active state */
+.filter-btn.active-filter {
+  background-color: #a87b00 !important;
+  color: #fff !important;
+}
+
+/* Smooth transitions */
+.responsive {
+  transition: all 0.3s ease;
+}
+
+/* Grid container styles */
+#grid1Container, #grid2Container, #grid3Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  #grid1Container, #grid2Container, #grid3Container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
